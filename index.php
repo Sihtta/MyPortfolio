@@ -51,7 +51,7 @@
             <img src="./assets/images/Me.png" alt="Image" />
         </section>
     </section>
-    
+
     <!-- Projects Section -->
     <section class="projects" id="projects">
         <h2 class="title">My <span>Projects</span></h2>
@@ -130,7 +130,7 @@
             </div>
         </div>
     </section>
-    
+
 
     <!-- Skills Section -->
     <section class="skills" id="skills">
@@ -229,7 +229,7 @@
                 </div>
             </div>
         </div>
-    </section>    
+    </section>
 
     <!-- ************************* Contact Section ************************* -->
     <section class="contact" id="contact">
