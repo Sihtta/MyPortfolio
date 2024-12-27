@@ -956,10 +956,6 @@ footer i{
         width: 180px; 
     }
 
-    .skills .title {
-        font-size: 3.5rem;
-    }
-
     .skill-icon {
         font-size: 2.5rem;
     }
@@ -975,10 +971,6 @@ footer i{
         width: 160px;
     }
 
-    .skills .title {
-        font-size: 3rem;
-    }
-
     .skill-icon {
         font-size: 2rem;
     }
@@ -992,10 +984,6 @@ footer i{
 
     .skill-card {
         width: 140px; 
-    }
-
-    .skills .title {
-        font-size: 2.5rem;
     }
 
     .skill-icon {
