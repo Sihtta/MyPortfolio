@@ -130,7 +130,7 @@ section{
     background: linear-gradient(90deg, #ff00ee, #0f0a0a, #ff00ee);
     background-size: 200%;
     -webkit-background-clip: text;
-    animation: gradientShift 4s ease-in-out infinite, fadeInUp 1.2s ease forwards;
+    animation: gradientShift 3s ease-in-out infinite, fadeInUp 0.8s ease forwards;
     opacity: 0;
     transform: translateY(30px);
 }
@@ -977,9 +977,18 @@ footer i{
 }
 
 @media screen and (max-width: 500px) {
+
     .skills-grid {
         grid-template-columns: repeat(2, 1fr); 
         gap: 1rem;
+    }
+    h1{
+        margin-top: -20%;
+    }
+
+    .about2 img{
+        margin-top: -5%;
+        margin-bottom: -20%;
     }
 
     .skill-card {
