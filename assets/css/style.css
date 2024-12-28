@@ -458,24 +458,23 @@ section.start-animation .text-content2 p{
 /* General section styling */
 .education-experience {
     margin-bottom: 2rem;
-    width: 100%; /* Make sure the section takes up the full width */
+    width: 100%; 
 }
 
-/* Row that contains both columns */
 .row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Ensures there is space between the columns */
-    gap: 2rem; /* Adds space between the columns */
+    justify-content: space-between; 
+    gap: 2rem; 
 }
 
-/* Flex properties for each column */
 .column {
-    flex: 1 1 45%; /* Each column takes up 45% of the row width */
-    min-width: 280px; /* Ensures columns don't shrink too small */
+    flex: 1 1 45%; 
+    min-width: 280px; 
+    max-width: 100%;  
+    overflow: hidden;
 }
 
-/* Ensure sections (columns) animate correctly */
 .column:nth-child(1) {
     opacity: 0;
     transform: translateX(-100px);
@@ -907,6 +906,14 @@ footer i{
     body {
         overflow-x: hidden;
     }
+    .column {
+        flex: 1 1 100%;
+        min-width: 100%;
+    }
+    section.start-animation .column:nth-child(1),
+    section.start-animation .column:nth-child(2) {
+        animation-delay: 0.2s; 
+    }
     html, body {
         width: 100%;
         margin: 0;
@@ -946,7 +953,8 @@ footer i{
     }
 
     .about2{
-        margin-top: -30%;
+        margin-top: -25%;
+        margin-top: -20%;
     }
 
     .navbar.active{
