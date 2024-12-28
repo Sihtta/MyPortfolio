@@ -141,9 +141,28 @@ section{
     background: linear-gradient(90deg, #ff00ee, #0f0a0a, #ff00ee);
     background-size: 200%;
     -webkit-background-clip: text;
+    opacity: 0; /* Initialement invisible */
+    transform: translateY(30px); /* Déplacement vers le bas au départ */
+    transition: opacity 0.8s ease, transform 0.8s ease; /* Transition douce */
+}
+
+/* Classe pour rendre visible les titres */
+.text-animation h2.visible {
+    opacity: 1;
+    transform: translateY(0); /* Retour à la position initiale */
     animation: gradientShift 3s ease-in-out infinite, fadeInUp 0.8s ease forwards;
-    opacity: 0;
-    transform: translateY(30px);
+}
+
+/* Section Timeline */
+.timeline-item {
+    opacity: 0; /* Cache les éléments de la timeline au départ */
+    transform: translateY(50px); /* Déplacement vers le bas au départ */
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0); /* Retour à la position initiale */
 }
 
 @keyframes gradientShift {
@@ -690,6 +709,11 @@ section.start-animation .column h2 {
 
     .card {
         width: 90%;
+    }
+    .timeline-item {
+        opacity: 1; 
+        transform: translateY(0);
+        transition: none; 
     }
 }
 

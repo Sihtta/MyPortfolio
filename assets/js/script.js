@@ -41,6 +41,30 @@ window.onscroll = () => {
             card.classList.remove('show');
         }
     });
+
+    // Détection des titres h2 pour animation
+    const sectionTitles = document.querySelectorAll('.text-animation h2');
+    sectionTitles.forEach(title => {
+        const rect = title.getBoundingClientRect();
+
+        if (rect.top < window.innerHeight * 0.8 && rect.bottom >= 0) {
+            title.classList.add('visible'); // Ajouter la classe visible
+        } else {
+            title.classList.remove('visible'); // Retirer la classe visible
+        }
+    });
+
+    // Détection des éléments de la timeline
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    timelineItems.forEach(item => {
+        const rect = item.getBoundingClientRect();
+
+        if (rect.top < window.innerHeight * 0.8 && rect.bottom >= 0) {
+            item.classList.add('visible'); // Ajouter la classe visible
+        } else {
+            item.classList.remove('visible'); // Retirer la classe visible
+        }
+    });
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -86,4 +110,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
     revealContact();
 });
-
