@@ -973,9 +973,6 @@ footer i{
         animation: none; 
     }
 
-    .h1{
-        margin-top: -35%;
-    }
 }
 
 @media(max-width:450px){
@@ -1022,11 +1019,6 @@ footer i{
     .skills-grid {
         grid-template-columns: repeat(2, 1fr); 
         gap: 1rem;
-    }
-
-    .about2 img{
-        margin-top: -5%;
-        margin-bottom: -20%;
     }
 
     .skill-card {
