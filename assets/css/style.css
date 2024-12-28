@@ -910,10 +910,6 @@ footer i{
         flex: 1 1 100%;
         min-width: 100%;
     }
-    section.start-animation .column:nth-child(1),
-    section.start-animation .column:nth-child(2) {
-        animation-delay: 0.2s; 
-    }
     html, body {
         width: 100%;
         margin: 0;
