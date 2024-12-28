@@ -907,6 +907,11 @@ footer i{
     body {
         overflow-x: hidden;
     }
+    html, body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
     .projects-grid {
         grid-template-columns: 1fr;
     }
@@ -941,7 +946,7 @@ footer i{
     }
 
     .about2{
-        margin-top: -20%;
+        margin-top: -30%;
     }
 
     .navbar.active{
