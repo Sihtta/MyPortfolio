@@ -964,10 +964,18 @@ footer i{
     .home .text-content h1{
         font-size: 4rem;
     }
+    .title{
+        opacity: 1;
+        transform: translateY(0); 
+    }
+
     section.start-animation .title {
         animation: none; 
-        transform: translateY(0); 
-        opacity: 1; 
+    }
+
+    .about2 img{
+        margin-top: -5%;
+        margin-bottom: -20%;
     }
 }
 
