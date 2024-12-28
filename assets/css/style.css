@@ -515,17 +515,6 @@ section.start-animation .column h2 {
     padding-left: 1.9rem;
 }
 
-.timeline-item {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
-  }
-  
-  .timeline-item.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
 .content {
     padding: 1.5rem;
     border: .2rem solid #ff00ee;
@@ -702,11 +691,6 @@ section.start-animation .column h2 {
     .card {
         width: 90%;
     }
-    .timeline-item {
-        opacity: 1;
-        transform: translateY(0); 
-        transition: opacity 0.3s ease-out;
-      }
 }
 
 
