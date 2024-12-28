@@ -1,112 +1,89 @@
-const menubar = document.querySelector('#menu');
-const Navbar = document.querySelector('.navbar');
-
-menubar.onclick = () => {
-    menubar.classList.toggle('bx-x');
-    Navbar.classList.toggle('active');
-};
-
-const section = document.querySelectorAll('section');
-const navlink = document.querySelectorAll('header nav a');
-
-window.onscroll = () => {
-    section.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
-        if (top > offset && top < offset + height) {
-            sec.classList.add('start-animation');
-            navlink.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-            });
-        }
-    });
-
-    var header = document.querySelector('.header');
-    header.classList.toggle('sticky', window.scrollY > 100);
-    menubar.classList.remove('bx-x');
-    Navbar.classList.remove('active');
-
-    const cards = document.querySelectorAll('.card');
-    const triggerBottom = window.innerHeight * 0.9;
-
-    cards.forEach(card => {
-        const cardTop = card.getBoundingClientRect().top;
-
-        if (cardTop < triggerBottom) {
-            card.classList.add('show');
-        } else {
-            card.classList.remove('show');
-        }
-    });
-
-    // Détection des titres h2 pour animation
-    const sectionTitles = document.querySelectorAll('.text-animation h2');
-    sectionTitles.forEach(title => {
-        const rect = title.getBoundingClientRect();
-
-        if (rect.top < window.innerHeight * 0.8 && rect.bottom >= 0) {
-            title.classList.add('visible'); // Ajouter la classe visible
-        } else {
-            title.classList.remove('visible'); // Retirer la classe visible
-        }
-    });
-
-    // Détection des éléments de la timeline
-    const timelineItems = document.querySelectorAll('.timeline-item');
-    timelineItems.forEach(item => {
-        const rect = item.getBoundingClientRect();
-
-        if (rect.top < window.innerHeight * 0.8 && rect.bottom >= 0) {
-            item.classList.add('visible'); // Ajouter la classe visible
-        } else {
-            item.classList.remove('visible'); // Retirer la classe visible
-        }
-    });
-};
-
 document.addEventListener('DOMContentLoaded', () => {
+    const menubar = document.querySelector('#menu');
+    const Navbar = document.querySelector('.navbar');
+    const section = document.querySelectorAll('section');
+    const navlink = document.querySelectorAll('header nav a');
     const cards = document.querySelectorAll('.card');
-    cards.forEach(card => card.classList.add('preload'));
-});
-
-document.addEventListener('DOMContentLoaded', () => {
     const skillCards = document.querySelectorAll('.skill-card');
+    const contactSection = document.querySelector('.contact');
+    const sectionTitles = document.querySelectorAll('.text-animation h2');
+    const timelineItems = document.querySelectorAll('.timeline-item');
 
-    const revealSkills = () => {
+    // Menu toggle
+    menubar.onclick = () => {
+        menubar.classList.toggle('bx-x');
+        Navbar.classList.toggle('active');
+    };
+
+    // Détection du scroll avec debounce
+    let debounceTimeout;
+    const onScroll = () => {
+        const top = window.scrollY;
+
+        // Section animation
+        section.forEach(sec => {
+            let offset = sec.offsetTop - 150;
+            let height = sec.offsetHeight;
+            let id = sec.getAttribute('id');
+            if (top > offset && top < offset + height) {
+                sec.classList.add('start-animation');
+                navlink.forEach(links => {
+                    links.classList.remove('active');
+                    document.querySelector(`header nav a[href*=${id}]`).classList.add('active');
+                });
+            }
+        });
+
+        // Sticky header
+        const header = document.querySelector('.header');
+        header.classList.toggle('sticky', top > 100);
+
+        // Hide menu on scroll
+        menubar.classList.remove('bx-x');
+        Navbar.classList.remove('active');
+
+        // Card visibility
         const triggerBottom = window.innerHeight * 0.9;
+        cards.forEach(card => {
+            const cardTop = card.getBoundingClientRect().top;
+            card.classList.toggle('show', cardTop < triggerBottom);
+        });
 
+        // Section titles animation
+        sectionTitles.forEach(title => {
+            const rect = title.getBoundingClientRect();
+            title.classList.toggle('visible', rect.top < window.innerHeight * 0.7 && rect.bottom >= 0);
+        });
+
+        // Timeline animation
+        timelineItems.forEach(item => {
+            const rect = item.getBoundingClientRect();
+            item.classList.toggle('visible', rect.top < window.innerHeight * 0.8 && rect.bottom >= 0);
+        });
+
+        // Contact section animation
+        const sectionTop = contactSection.getBoundingClientRect().top;
+        contactSection.classList.toggle('start-animation', sectionTop < triggerBottom);
+    };
+
+    // Détecter le scroll avec debounce
+    window.addEventListener('scroll', () => {
+        clearTimeout(debounceTimeout);
+        debounceTimeout = setTimeout(onScroll, 100);
+    });
+
+    // Preload animation for cards
+    cards.forEach(card => card.classList.add('preload'));
+
+    // Skill cards reveal
+    const revealSkills = () => {
         skillCards.forEach(skillCard => {
             const cardTop = skillCard.getBoundingClientRect().top;
-
-            if (cardTop < triggerBottom) {
-                skillCard.classList.add('show');
-            } else {
-                skillCard.classList.remove('show');
-            }
+            skillCard.classList.toggle('show', cardTop < window.innerHeight * 0.9);
         });
     };
 
     window.addEventListener('scroll', revealSkills);
-
-    revealSkills();
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const contactSection = document.querySelector('.contact');
-
-    const revealContact = () => {
-        const triggerBottom = window.innerHeight * 0.9;
-        const sectionTop = contactSection.getBoundingClientRect().top;
-
-        if (sectionTop < triggerBottom) {
-            contactSection.classList.add('start-animation');
-        }
-    };
-
-    window.addEventListener('scroll', revealContact);
-
-    revealContact();
+    revealSkills(); 
+    onScroll(); 
 });
