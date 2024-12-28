@@ -964,6 +964,11 @@ footer i{
     .home .text-content h1{
         font-size: 4rem;
     }
+    section.start-animation .title {
+        animation: none; 
+        transform: translateY(0); 
+        opacity: 1; 
+    }
 }
 
 @media(max-width:450px){
