@@ -10,7 +10,7 @@
     color: #fff;
 }
 body{
-    background: #8f2b2b;
+    background: #0f0a0a;
     height: 100vh;
 }
 html{
@@ -903,6 +903,10 @@ footer i{
 @media(max-width:768px){
     #menu{
         display: block;
+        right: 20px;
+    }
+    .logo{
+        font-size: 2.5rem;
     }
     .navbar{
         position: absolute;
