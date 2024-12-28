@@ -901,12 +901,18 @@ footer i{
     }
 }
 @media(max-width:768px){
-    #menu{
+    #menu {
         display: block;
-        right: 20px;
+        position: absolute; 
+        right: 50px; 
+        font-size: 24px; 
+        z-index: 10; 
+    }
+    .header {
+        position: relative; 
     }
     .logo{
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
     .navbar{
         position: absolute;
@@ -919,6 +925,11 @@ footer i{
         border-bottom: .2rem solid rgba(255,255,255,.1);
         display: none;
     }
+
+    h1{
+        margin-top: -20%;
+    }
+    
     .navbar.active{
         display: block;
     }
@@ -985,9 +996,6 @@ footer i{
     .skills-grid {
         grid-template-columns: repeat(2, 1fr); 
         gap: 1rem;
-    }
-    h1{
-        margin-top: -20%;
     }
 
     .about2 img{
