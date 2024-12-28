@@ -471,7 +471,7 @@ section.start-animation .text-content2 p{
 .column {
     flex: 1 1 45%; 
     min-width: 280px; 
-    max-width: 100%;  
+    max-width: 100%;  /* S'assure que les colonnes ne débordent pas */
     overflow: hidden;
 }
 
@@ -906,10 +906,6 @@ footer i{
     body {
         overflow-x: hidden;
     }
-    .column {
-        flex: 1 1 100%;
-        min-width: 100%;
-    }
     html, body {
         width: 100%;
         margin: 0;
@@ -950,7 +946,7 @@ footer i{
 
     .about2{
         margin-top: -25%;
-        margin-top: -20%;
+        margin-bottom: -20%;
     }
 
     .navbar.active{
