@@ -10,7 +10,7 @@
     color: #fff;
 }
 body{
-    background: #0f0a0a;
+    background: #8f2b2b;
     height: 100vh;
 }
 html{
@@ -162,7 +162,6 @@ section{
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3); 
     z-index: 1;
     animation: darkenOverlay 3s ease forwards;
     opacity: 0;
@@ -889,6 +888,7 @@ footer i{
 @media(max-width:991px){
     .header{
         padding: 2rem 9%;
+        animation: none;
     }
     section{
         padding: 10rem 3% 2rem;
