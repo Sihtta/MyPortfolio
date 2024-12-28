@@ -904,6 +904,9 @@ footer i{
     }
 }
 @media(max-width:768px){
+    body {
+        overflow-x: hidden;
+    }
     .projects-grid {
         grid-template-columns: 1fr;
     }
@@ -935,6 +938,10 @@ footer i{
         border-top: 1px solid rgba(255,255,255,.1);
         border-bottom: .2rem solid rgba(255,255,255,.1);
         display: none;
+    }
+
+    .about2{
+        margin-top: -20%;
     }
 
     .navbar.active{
