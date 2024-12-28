@@ -921,7 +921,7 @@ footer i{
         z-index: 10; 
     }
     .header {
-        position: fixed;
+        position: relative; 
         min-height: 50px;
     }
     .logo{
