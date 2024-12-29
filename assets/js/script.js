@@ -52,13 +52,13 @@ document.addEventListener('DOMContentLoaded', () => {
         // Section titles animation
         sectionTitles.forEach(title => {
             const rect = title.getBoundingClientRect();
-            title.classList.toggle('visible', rect.top < window.innerHeight * 0.7 && rect.bottom >= 0);
+            title.classList.toggle('visible', rect.top < window.innerHeight * 0.4 && rect.bottom >= 0);
         });
 
         // Timeline animation
         timelineItems.forEach(item => {
             const rect = item.getBoundingClientRect();
-            item.classList.toggle('visible', rect.top < window.innerHeight * 0.8 && rect.bottom >= 0);
+            item.classList.toggle('visible', rect.top < window.innerHeight * 0.6 && rect.bottom >= 0);
         });
 
         // Contact section animation
