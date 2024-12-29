@@ -392,7 +392,7 @@ a.btn {
     opacity: 0;
 }
 section.start-animation .title{
-    animation: top 0.6s ease forwards;
+    animation: top 0.5s ease forwards;
 }
 
 @keyframes top{
@@ -554,7 +554,6 @@ section.start-animation .column h2 {
 
 /* Projects Section */
 .projects {
-    padding: 5rem 2rem;
     text-align: center;
     background: #0f0a0a;
     color: #fff;
@@ -895,6 +894,10 @@ footer i{
     footer{
         padding: 2rem 3%;
     }
+    .about2{
+        margin-top: -20%;
+        margin-bottom: -80%;
+    }
 }
 @media(max-width:768px){
     .text-content{
@@ -933,11 +936,6 @@ footer i{
         display: none;
     }
 
-    .about2{
-        margin-top: -20%;
-        margin-bottom: -80%;
-    }
-
     .navbar.active{
         display: block;
     }
@@ -957,14 +955,6 @@ footer i{
     }
     .home .text-content h1{
         font-size: 4rem;
-    }
-    .title{
-        opacity: 1;
-        transform: translateY(0); 
-    }
-
-    section.start-animation .title {
-        animation: none; 
     }
 
 
@@ -996,9 +986,6 @@ footer i{
 }
 
 @media screen and (max-width: 800px) {
-    .skills{
-        margin-top: 25%;
-    }
     .skills-grid {
         grid-template-columns: repeat(2, 1fr); 
         gap: 1.5rem;
