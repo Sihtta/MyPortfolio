@@ -370,7 +370,6 @@ a.btn {
     animation: Scale 1s ease forwards;
     scale: 0;
     animation-delay: 2s;
-    margin-top: 20%;
 }
 @keyframes Scale{
     0%{
@@ -937,8 +936,26 @@ footer i{
         margin: 3rem 0;
         font-size: 2rem;
     }
-    .home{
+    .home {
+        display: flex;
         flex-direction: column-reverse;
+        gap: 1rem;
+        padding: 2rem 1rem; /* Contrôle les espaces internes */
+    }
+
+    .about2 {
+        margin: 0 auto;
+        padding: 1rem 0;
+        text-align: center; /* Centre l'image */
+    }
+
+    .about2 img {
+        max-width: 100%;
+    }
+
+    .text-content {
+        margin: 0;
+        padding: 1rem 0;
     }
     .home .text-content{
         display: flex;
