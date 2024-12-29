@@ -32,7 +32,6 @@ html{
 #menu {
     display: block;
     position: absolute; /* Positionne l'icône par rapport à .header */
-    right: 20px;  /* Décale l'icône du menu vers la droite */
     top: 50%; /* Aligne l'icône verticalement au centre */
     transform: translateY(-50%); /* Centre parfaitement verticalement */
     font-size: 24px;
@@ -939,7 +938,7 @@ footer i{
 
     .about2{
         margin-top: -20%;
-        margin-bottom: -30%;
+        margin-bottom: -80%;
     }
 
     .navbar.active{
@@ -998,6 +997,9 @@ footer i{
 }
 
 @media screen and (max-width: 800px) {
+    .skills{
+        margin-top: 30%;
+    }
     .skills-grid {
         grid-template-columns: repeat(2, 1fr); 
         gap: 1.5rem;
