@@ -392,7 +392,7 @@ a.btn {
     opacity: 0;
 }
 section.start-animation .title{
-    animation: top 0.5s ease forwards;
+    animation: top 0.6s ease forwards;
 }
 
 @keyframes top{
@@ -894,15 +894,8 @@ footer i{
     footer{
         padding: 2rem 3%;
     }
-    .about2{
-        margin-top: -20%;
-        margin-bottom: -80%;
-    }
 }
 @media(max-width:768px){
-    .text-content{
-        margin-top: -40%;
-    }
     .projects-grid {
         grid-template-columns: 1fr;
     }
@@ -956,9 +949,14 @@ footer i{
     .home .text-content h1{
         font-size: 4rem;
     }
+    .title{
+        opacity: 1;
+        transform: translateY(0); 
+    }
 
-
-
+    section.start-animation .title {
+        animation: none; 
+    }
 }
 
 @media(max-width:450px){
