@@ -453,10 +453,9 @@ section.start-animation .text-content2 p{
     }
 }
 
-/* General section styling */
 .education-experience {
     margin-bottom: 2rem;
-    width: 100%; /* Make sure the section takes up the full width */
+    width: 100%; 
 }
 
 .row {
