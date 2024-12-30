@@ -940,7 +940,7 @@ footer i{
         display: flex;
         flex-direction: column-reverse;
         gap: 1rem;
-        padding: 2rem 1rem; /* Contrôle les espaces internes */
+        padding: 2rem 1rem; 
     }
 
     .about2 {
