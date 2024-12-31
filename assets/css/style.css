@@ -35,7 +35,7 @@ html{
     top: 50%; /* Aligne l'icône verticalement au centre */
     transform: translateY(-50%); /* Centre parfaitement verticalement */
     font-size: 24px;
-    z-index: 101; /* S'assure que l'icône du menu est au-dessus de tout autre contenu */
+    z-index: 101;
 }
 
 .sticky{
