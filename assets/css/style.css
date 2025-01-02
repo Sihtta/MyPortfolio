@@ -29,9 +29,7 @@ html {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* Garder les éléments aux extrémités */
     align-items: center;
-    /* Centrer verticalement */
     z-index: 100;
 }
 
