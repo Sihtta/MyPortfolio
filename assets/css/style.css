@@ -601,11 +601,15 @@ section.start-animation .column h2 {
 }
 
 .projects-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem 15rem;
-    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card.featured {
+    grid-column: 1 / -1;
+    max-width: 800px;
     margin: 0 auto;
 }
 

@@ -9,6 +9,9 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@2.15.1/devicon.min.css">
+
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico?v=1.2">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png?v=1.2">
 </head>
 
 <body>
@@ -32,8 +35,8 @@
             <div class="text-animation">
                 <h2>Student Developer</h2>
             </div>
-            <p>Second-year student in a Bachelor's Degree in Computer Science (BUT Informatique), currently seeking a
-                web development internship from April 7 to May 30, 2025, to apply the knowledge gained in programming.</p>
+            <p>Second-year Computer Science student at IUT of Metz, specializing in Application Development (RA track)
+                , passionate about creating innovative and efficient solutions.</p>
             <div class="btn-section">
                 <a href="#contact" class="btn">Contact me</a>
                 <a href="./assets/pdf/cv.pdf" class="btn" download="Matthis_Pourcelot_CV.pdf">Download my CV</a>
@@ -56,7 +59,8 @@
     <section class="projects" id="projects">
         <h4 class="title">My <span>Projects</span></h4>
         <div class="projects-grid">
-            <div class="card">
+            <!-- Portfolio Card (Featured) -->
+            <div class="card featured">
                 <div class="card-inner">
                     <div class="card-front">
                         <div class="card-content">
@@ -68,10 +72,29 @@
                     <div class="card-back">
                         <p>View the project:</p>
                         <div class="card-icons">
-                            <a href="https://votre-domaine.com/InteractivePortfolio/public/" target="_blank">
+                            <a href="https://matthis-pourcelot.com/InteractivePortfolio/public/index.php/" target="_blank">
                                 <i class="fas fa-link"></i>
                             </a>
                             <a href="https://github.com/Sihtta/portfolio.git" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Other Projects -->
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-content">
+                            <h2>Finna</h2>
+                            <p>The ideal app to manage your finances smoothly and effortlessly.</p>
+                            <p>Tech Stack: SYMFONY, PHP, CSS</p>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>View the project:</p>
+                        <div class="card-icons">
+                            <a href="http://matthis-pourcelot.com/Finna/compte/vue/index.php" target="_blank"><i class="fas fa-link"></i></a>
+                            <a href="https://github.com/Sihtta/Finna-" target="_blank"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                 </div>
@@ -80,16 +103,16 @@
                 <div class="card-inner">
                     <div class="card-front">
                         <div class="card-content">
-                            <h2>Finna</h2>
-                            <p>The ideal app to manage your finances smoothly and effortlessly.</p>
-                            <p>Tech Stack: PHP, HTML, CSS</p>
+                            <h2>Focusly</h2>
+                            <p>A school project for a task management site with many features</p>
+                            <p>Tech Stack: PHP, CSS, HTML</p>
                         </div>
                     </div>
                     <div class="card-back">
                         <p>View the project:</p>
                         <div class="card-icons">
-                            <a href="http://localhost/Finna/app/vue/" target="_blank"><i class="fas fa-link"></i></a>
-                            <a href="https://github.com/Sihtta/Finna-" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://matthis-pourcelot.com/Focusly/public/index.php/" target="_blank"><i class="fas fa-link"></i></a>
+                            <a href="https://github.com/Sihtta/archiLog" target="_blank"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                 </div>
@@ -106,7 +129,7 @@
                     <div class="card-back">
                         <p>View the project:</p>
                         <div class="card-icons">
-                            <a href="http://localhost/ToDoList/vue/toDoList.php" target="_blank"><i class="fas fa-link"></i></a>
+                            <a href="http://matthis-pourcelot.com/ToDoList/vue/toDoList.php" target="_blank"><i class="fas fa-link"></i></a>
                             <a href="https://github.com/Sihtta/ToDoList" target="_blank"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
@@ -116,9 +139,9 @@
                 <div class="card-inner">
                     <div class="card-front">
                         <div class="card-content">
-                            <h2>Project 4</h2>
-                            <p>Brief description</p>
-                            <p>Tech Stack: TypeScript, React</p>
+                            <h2>Post-AR</h2>
+                            <p>Projet sympa</p>
+                            <p>Tech Stack: React</p>
                         </div>
                     </div>
                     <div class="card-back">
@@ -243,14 +266,13 @@
         }
         ?>
 
-
         <form action="backend/send-email.php" method="POST">
             <div class="input-box">
-                <input type="text" name="name" required placeholder="Full Name">
+                <input type="text" name="name" placeholder="Full Name">
                 <input type="email" name="email" required placeholder="Email">
             </div>
             <div class="input-box">
-                <input type="tel" name="phone" required placeholder="Mobile Number">
+                <input type="tel" name="phone" placeholder="Mobile Number">
                 <input type="text" name="subject" required placeholder="Subject">
             </div>
             <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
@@ -266,7 +288,7 @@
     </footer>
 
     <script src="./assets/js/script.js"></script>
-
+    <script src="./assets/js/form-validation.js"></script>
 </body>
 
 </html>
