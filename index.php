@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matthis Pourcelot</title>
-    <link rel="stylesheet" href="./assets/css/style.css?v=1.2">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@2.15.1/devicon.min.css">
@@ -59,7 +59,7 @@
     <section class="projects" id="projects">
         <h4 class="title">My <span>Projects</span></h4>
         <div class="projects-grid">
-            <!-- Portfolio Card (Featured) -->
+            <!-- Featured Project -->
             <div class="card featured">
                 <div class="card-inner">
                     <div class="card-front">
@@ -80,75 +80,77 @@
                     </div>
                 </div>
             </div>
-            <!-- Other Projects -->
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <div class="card-content">
-                            <h2>Finna</h2>
-                            <p>The ideal app to manage your finances smoothly and effortlessly.</p>
-                            <p>Tech Stack: SYMFONY, PHP, CSS</p>
+            <!-- Regular Projects Grid -->
+            <div class="regular-projects">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-content">
+                                <h2>Finna</h2>
+                                <p>The ideal app to manage your finances smoothly and effortlessly.</p>
+                                <p>Tech Stack: PHP, CSS</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card-back">
-                        <p>View the project:</p>
-                        <div class="card-icons">
-                            <a href="http://matthis-pourcelot.com/Finna/compte/vue/index.php" target="_blank"><i class="fas fa-link"></i></a>
-                            <a href="https://github.com/Sihtta/Finna-" target="_blank"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <div class="card-content">
-                            <h2>Focusly</h2>
-                            <p>A school project for a task management site with many features</p>
-                            <p>Tech Stack: PHP, CSS, HTML</p>
-                        </div>
-                    </div>
-                    <div class="card-back">
-                        <p>View the project:</p>
-                        <div class="card-icons">
-                            <a href="https://matthis-pourcelot.com/Focusly/public/index.php/" target="_blank"><i class="fas fa-link"></i></a>
-                            <a href="https://github.com/Sihtta/archiLog" target="_blank"><i class="fab fa-github"></i></a>
+                        <div class="card-back">
+                            <p>View the project:</p>
+                            <div class="card-icons">
+                                <a href="http://matthis-pourcelot.com/Finna/compte/vue/index.php" target="_blank"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/Sihtta/Finna-" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <div class="card-content">
-                            <h2>ToDoList</h2>
-                            <p>An intuitive todolist to organize your tasks.</p>
-                            <p>Tech Stack: PHP, CSS</p>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-content">
+                                <h2>Focusly</h2>
+                                <p>A school project for a task management site with many features</p>
+                                <p>Tech Stack: Symfony, PHP, CSS</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card-back">
-                        <p>View the project:</p>
-                        <div class="card-icons">
-                            <a href="http://matthis-pourcelot.com/ToDoList/vue/toDoList.php" target="_blank"><i class="fas fa-link"></i></a>
-                            <a href="https://github.com/Sihtta/ToDoList" target="_blank"><i class="fab fa-github"></i></a>
+                        <div class="card-back">
+                            <p>View the project:</p>
+                            <div class="card-icons">
+                                <a href="https://matthis-pourcelot.com/Focusly/public/index.php/" target="_blank"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/Sihtta/archiLog" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <div class="card-content">
-                            <h2>Post-AR</h2>
-                            <p>Projet sympa</p>
-                            <p>Tech Stack: React</p>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-content">
+                                <h2>ToDoList</h2>
+                                <p>An intuitive todolist to organize your tasks.</p>
+                                <p>Tech Stack: PHP, CSS</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <p>View the project:</p>
+                            <div class="card-icons">
+                                <a href="http://matthis-pourcelot.com/ToDoList/vue/toDoList.php" target="_blank"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/Sihtta/ToDoList" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="card-back">
-                        <p>View the project:</p>
-                        <div class="card-icons">
-                            <a href="#" target="_blank"><i class="fas fa-link"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-content">
+                                <h2>Post-AR</h2>
+                                <p>Modern and responsive postcard management interface</p>
+                                <p>Tech Stack: React, Typescript, CSS</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <p>View the project:</p>
+                            <div class="card-icons">
+                                <a href="http://matthis-pourcelot.com/Post-AR/" target="_blank"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/Sihtta/Post-AR" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -176,7 +178,6 @@
                 <h3>TypeScript</h3>
                 <div class="progress-circle" data-percentage="60" style="--percentage: 60;"></div>
             </div>
-
             <div class="skill-card">
                 <i class="skill-icon fa-brands fa-php"></i>
                 <h3>PHP</h3>
@@ -193,14 +194,34 @@
                 <div class="progress-circle" data-percentage="50" style="--percentage: 50;"></div>
             </div>
             <div class="skill-card">
-                <i class="skill-icon fa-solid fa-c"></i>
-                <h3>C</h3>
+                <i class="skill-icon fa-solid fa-database"></i>
+                <h3>Cypher</h3>
                 <div class="progress-circle" data-percentage="50" style="--percentage: 50;"></div>
             </div>
             <div class="skill-card">
                 <i class="skill-icon fa-brands fa-symfony"></i>
                 <h3>Symfony</h3>
+                <div class="progress-circle" data-percentage="60" style="--percentage: 60;"></div>
+            </div>
+            <div class="skill-card">
+                <i class="skill-icon fa-brands fa-react"></i>
+                <h3>React</h3>
                 <div class="progress-circle" data-percentage="50" style="--percentage: 50;"></div>
+            </div>
+            <div class="skill-card">
+                <i class="skill-icon fa-brands fa-git-alt"></i>
+                <h3>Git</h3>
+                <div class="progress-circle" data-percentage="70" style="--percentage: 70;"></div>
+            </div>
+            <div class="skill-card">
+                <i class="skill-icon fa-brands fa-github"></i>
+                <h3>GitHub</h3>
+                <div class="progress-circle" data-percentage="70" style="--percentage: 70;"></div>
+            </div>
+            <div class="skill-card">
+                <i class="skill-icon fa-brands fa-gitlab"></i>
+                <h3>GitLab</h3>
+                <div class="progress-circle" data-percentage="60" style="--percentage: 60;"></div>
             </div>
         </div>
     </section>
@@ -286,6 +307,24 @@
         </div>
         <a href="#"> <i class='bx bx-up-arrow-alt'></i></a>
     </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-icon">
+        <img src="assets/images/chatbot.png" alt="Chatbot">
+    </div>
+    <div class="chatbot-window">
+        <div class="chatbot-header">
+            <span>Matthis's Portfolio Assistant</span>
+            <span class="close-btn">&times;</span>
+        </div>
+        <div class="chatbot-messages"></div>
+        <div class="chatbot-input">
+            <input type="text" placeholder="Type your message...">
+            <button>Send</button>
+        </div>
+    </div>
+    <link rel="stylesheet" href="assets/css/chatbot.css">
+    <script src="assets/js/chatbot.js"></script>
 
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/form-validation.js"></script>
